@@ -75,13 +75,13 @@
         // computer controls !
         var paddle2centre=paddle2+(PADDLE_HEIGHT/2);
         
-        if(paddle2centre<ballY-33)
+        if(paddle2centre<ballY-34)
         {
-            paddle2+=5.6;
+            paddle2+=5.8;
         }
-        else if(paddle2centre>ballY+33)
+        else if(paddle2centre>ballY+34)
         {
-            paddle2-=5.6;
+            paddle2-=5.9;
         }
         
     }
@@ -100,7 +100,7 @@
                 ballSpeedX=-ballSpeedX;
                 // use collision principles for better controls!
                 var deltaY=ballY-(paddle1+PADDLE_HEIGHT/2);
-                ballSpeedY=deltaY*0.35;
+                ballSpeedY=deltaY*0.33;
             } else { // reset the ball if missed
                 player2score++; ballReset();
             }
